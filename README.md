@@ -12,6 +12,7 @@ Features
 * Four layout sizes, maxing out at 1000px width
 * Switches to single column mode below 768px for mobile
 * Templates for fav icons
+* Changes colour to let you know which size layout you're looking at
 
 File Guide
 ----------
