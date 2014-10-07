@@ -25,9 +25,9 @@ Taken from:
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
 * www.getskeleton.com
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-This file 
+* http://www.opensource.org/licenses/mit-license.php (6/20/2012)
+
+This file sets default styles for lots of things, and provides a CSS reset across the board.
 
 ### layout.css
 This file contains metrics only for layout and positioning, including sizes for double, triple, and quad, and default padding for content.
