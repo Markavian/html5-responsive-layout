@@ -46,6 +46,10 @@ column > content, content > content {
 	background: rgba(0, 0, 0, 0.1);
 }
 
+.center {
+	text-align: center;
+}
+
 /* Default box sizes */
 @media only screen {
 	body { background: #FFD; }
