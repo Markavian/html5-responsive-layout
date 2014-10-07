@@ -1,0 +1,88 @@
+/* Site specific fonts, colours, and box sizes */
+html, body {
+	font-family: Georgia, serif;
+	font-size: 90%;
+}
+
+heading, version, copyright {
+	font-family: Trebuchet MS, sans-serif;
+	text-transform: uppercase;
+}
+
+navigation {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+footer {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+version {
+	display: block;
+}
+
+copyright {
+	display: block;
+	text-align: center;
+}
+
+column > heading, content > heading {
+	font-size: 150%;
+}
+
+column > p, content {
+	text-align: justify;
+}
+
+ul > li {
+	text-align: left;
+}
+
+column > content > ul.square {
+	margin-left: 20px;
+}
+
+column > content, content > content {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+/* Default box sizes */
+@media only screen {
+	body { background: #FFD; }
+	column > content { overflow: hidden; }
+	column.double > content { height: 200px; }
+	column.triple > content { height: 250px; }
+	column.quad > content { height: 300px; }
+	
+	column.quad > content > heading { text-align: center; }
+}
+
+/* Portrait design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+	body { background: #DFD; }
+	column.double > content { height: 270px; }
+	column.triple > content { height: 330px; }
+	column.quad > content { height: 410px; }
+	
+	column.quad > content > heading { font-size: 130%; }
+}
+
+/* Portrait design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	body { background: #DDF; }
+	column.double > content { height: auto; }
+	column.triple > content { height: auto; }
+	column.quad > content { height: auto; }
+	
+	column.quad > content > heading { font-size: 130%; }
+}
+
+/* Portrait design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body { background: #FDD; }
+	column.double > content { height: auto; }
+	column.triple > content { height: auto; }
+	column.quad > content { height: auto; }
+	
+	column.quad > content > heading { font-size: 130%; }
+}

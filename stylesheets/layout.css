@@ -1,0 +1,101 @@
+/* Basic tags */
+body > content {
+	display: block;
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+navigation {
+	display: block;
+}
+
+footer {
+	display: block;
+}
+
+column > content,
+content > content,
+navigation > content,
+footer > content {
+	display: block;
+	padding: 12px;
+	margin-bottom: 12px;
+}
+
+footer > content {
+	margin-bottom: 0;
+}
+
+p {
+	margin: 6px 0 18px 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+heading {
+	display: block;
+	font-weight: bold;
+	margin: 0 0 12px 0;
+}
+
+/* Max width layout for screens wider than 999px+ */
+@media only screen {
+	column { display: block; float: left; margin: 0 0 0 12px; vertical-align: top; overflow: hidden; }
+	column.first, column.single { margin-left: 0; }
+	column.single { width: 100%; }
+	column.double { width: 474px; }
+	column.triple { width: 312px; }
+	column.quad { width: 231px; }
+}
+
+/* Portrait design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+	body > content { width: 768px; }
+	column { }
+	column.first, column.single { margin-left: 0; }
+	column.single { width: 100%; }
+	column.double { width: 378px; }
+	column.triple { width: 248px; }
+	column.quad { width: 183px; }
+}
+
+/* Portrait design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	body > content { width: 320px; }
+	column, 
+	column.single,
+	column.double,
+	column.triple,
+	column.quad { width: 100%; margin: 0; }
+}
+
+/* Portrait design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body > content { width: 480px; }
+	column, 
+	column.single,
+	column.double,
+	column.triple,
+	column.quad { width: 100%; margin: 0; }
+}
+
+/* Clearing */
+content:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+  
+.clearfix:after, content { clear: both; }
+  
+.clearfix { zoom: 1; }
