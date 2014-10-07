@@ -18,7 +18,7 @@ File Guide
 
 ### index.html
 This is the example layout used for testing CSS. 
-I've made heavy use of custom tags, such as <navigation>, <footer>, <content>, <column>, and <heading>. These have been nested together with a bit of CSS class markup to denote positions.
+I've made heavy use of custom tags, such as ```<navigation>```, ```<footer>```, ```<content>```, ```<column>```, and ```<heading>```. These have been nested together with a bit of CSS class markup to denote positions.
 
 ### base.css
 Taken from:
